@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quaries form desgin in css</title>
+    <style> 
+            body{ 
+                background-color: bisque; 
+                margin: 0px;
+            }
+            .p1{ 
+                width: 50%;
+                height: 500px;
+                
+                margin: 50px auto;
+            }
+            .p1 input, .p1 select { 
+                height: 50px;
+                border: 1px solid #fff;
+                border-radius: 2px;
+            }
+            .col-25{ 
+                width: 25%;
+                min-width: 50px;
+                float: left;
+            }
+            .col-75{ 
+                width: 74%;
+                min-width: 50px;
+                float: left;
+            }
+            
+            
+            .w-100{ 
+                width: 100%;
+            
+            }
+            .row{ 
+               
+                min-height: 60px;
+                border-top: 50px;
+            
+            }
+
+
+
+            @media only screen And (max-width:700px ) {
+                .col-25,.col-75{ 
+                    width: 100%;
+                }
+                
+            }
+    </style>
+</head>
+<body>
+        <form class="p1">
+            <div class="row">
+                <div class="col-25 ">
+                     <label for="fname">First Name</label>
+                    </div>
+                <div class="col-75 ">
+                    <input style="border-radius: 10px;" id="fname" type="text"  name="First name" class="w-100">
+                </div>
+            </div> 
+             
+            <div class="row">
+                <div class="col-25 ">
+                    <label for="lname">last Name</label>
+                </div>
+
+                <div class="col-75 ">
+                    <input style="border-radius: 10px;" id="lname" type="text"  name="last name" class="w-100">
+                    </div>
+                </div> 
+             
+                <div class="row">
+                    <div class="col-25 ">
+                        <label for="country">Country</label>
+                    </div>
+    
+                    <div class="col-75 ">
+                        <select  style="border-radius: 10px;" id="country" name="country" class="w-100"> 
+                            <option value="india">India</option>
+                            <option value="canada">Canada</option>
+                            <option value="singapur">Singapur</option>
+                        </select>
+                         
+                    </div> 
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+        
+                        <div class="col-75">
+                           
+                          <textarea  style="border-radius: 10px; border: none;   subject" id="subject" name="subject" placeholder="Write Something" class="w-100" rows="8"></textarea>  
+                        </div> 
+                        </div>
+                    <input type="submit" name="submit" value="submit" style="float: right;  background-color: lightgreen; border-radius: 10px;">
+            
+           
+           
+            
+        </form>
+    
+</body>
+</html>
